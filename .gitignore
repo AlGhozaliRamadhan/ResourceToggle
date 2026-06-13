@@ -1,0 +1,22 @@
+# IDE and Text Editors
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+
+# Gradle and Build
+.gradle/
+build/
+out/
+bin/
+
+# Logs and Run Directories
+logs/
+run/
+crash-reports/
+
+# OS Generated
+.DS_Store
+Thumbs.db
