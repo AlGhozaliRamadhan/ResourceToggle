@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Check for dependency updates in the Forge project
+  - package-ecosystem: "gradle"
+    directory: "/Forge/1.20.1 - Forge 47.4.20"
+    schedule:
+      interval: "weekly"
+
+  # Check for dependency updates in the NeoForge project
+  - package-ecosystem: "gradle"
+    directory: "/NeoForge/1.20.1 - NeoForge"
+    schedule:
+      interval: "weekly"
