@@ -1,0 +1,53 @@
+name: Auto-generate Dependabot Config
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - '**/build.gradle'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate dependabot.yml
+        run: |
+          mkdir -p .github
+          echo "version: 2" > .github/dependabot.yml
+          echo "updates:" >> .github/dependabot.yml
+          
+          # Find all directories containing a build.gradle
+          find . -name "build.gradle" -not -path "*/\.*" | while read file; do
+            # Get the directory path, remove leading dot and trailing slash
+            dir=$(dirname "$file" | sed 's/^\.//' | sed 's/\/$//')
+            if [ -z "$dir" ]; then
+              dir="/"
+            fi
+            
+            echo "  - package-ecosystem: \"gradle\"" >> .github/dependabot.yml
+            echo "    directory: \"$dir\"" >> .github/dependabot.yml
+            echo "    schedule:" >> .github/dependabot.yml
+            echo "      interval: \"weekly\"" >> .github/dependabot.yml
+            echo "" >> .github/dependabot.yml
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/dependabot.yml
+          if git diff --staged --quiet; then
+            echo "No new folders found. dependabot.yml is up to date."
+          else
+            git commit -m "Auto-update dependabot.yml to include new version folders"
+            git push
+          fi
