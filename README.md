@@ -4,9 +4,6 @@
 
   [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1242864?style=for-the-badge&logo=curseforge&color=orange)](https://www.curseforge.com/minecraft/mc-mods/resourcetoggle)
   [![CurseForge Version](https://img.shields.io/curseforge/v/1242864?style=for-the-badge&logo=curseforge&color=blue)](https://www.curseforge.com/minecraft/mc-mods/resourcetoggle/files/latest)
-  [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=minecraft)](https://www.minecraft.net/)
-  [![Forge Version](https://img.shields.io/badge/Forge-Supported-red?style=for-the-badge)](https://files.minecraftforge.net/)
-  [![NeoForge Version](https://img.shields.io/badge/NeoForge-Supported-orange?style=for-the-badge)](https://neoforged.net/)
   [![License](https://img.shields.io/badge/License-All_Rights_Reserved-lightgrey?style=for-the-badge)](https://github.com/AlGhozaliRamadhan/ResourceToggle)
 </div>
 
