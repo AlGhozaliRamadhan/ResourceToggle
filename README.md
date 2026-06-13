@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://media.forgecdn.net/attachments/description/1242864/description_150c89fb-bdb8-4c5d-aa84-5142d070fa3b.jpg" alt="Resource Toggle Logo"/>
+  <img src="https://media.forgecdn.net/attachments/description/1242864/description_150c89fb-bdb8-4c5d-aa84-5142d070fa3b.jpg" alt="Resource Toggle Logo" width="200"/>
   <br/>
 
   [![CurseForge Downloads](https://img.shields.io/curseforge/dt/1242864?style=for-the-badge&logo=curseforge&color=orange)](https://www.curseforge.com/minecraft/mc-mods/resourcetoggle)
