@@ -1,0 +1,297 @@
+# Instincts generated from https://github.com/AlGhozaliRamadhan/ResourceToggle
+# Generated: 2026-06-14T06:35:38.985Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ResourceToggle-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/AlGhozaliRamadhan/ResourceToggle
+---
+
+# ResourceToggle Commit Length
+
+## Action
+
+Keep commit messages concise (~42 characters)
+
+## Evidence
+
+- Average commit message length: 42 chars
+- Based on 1 commits
+
+---
+id: ResourceToggle-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AlGhozaliRamadhan/ResourceToggle
+---
+
+# ResourceToggle Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: ResourceToggle-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AlGhozaliRamadhan/ResourceToggle
+---
+
+# ResourceToggle Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ResourceToggle-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/AlGhozaliRamadhan/ResourceToggle
+---
+
+# ResourceToggle Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ResourceToggle-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/AlGhozaliRamadhan/ResourceToggle
+---
+
+# ResourceToggle Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: resourcetoggle-instinct-class-naming
+trigger: "When creating a new Java class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: resourcetoggle-instinct-function-naming
+trigger: "When defining a Java function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: resourcetoggle-instinct-constant-naming
+trigger: "When declaring a constant in Java"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for the constant name
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: resourcetoggle-instinct-file-naming
+trigger: "When naming a Java source file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct File Naming
+
+## Action
+
+Use camelCase for the file name
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: resourcetoggle-instinct-import-style
+trigger: "When importing modules in Java"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: resourcetoggle-instinct-export-style
+trigger: "When exporting modules or classes in Java"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: resourcetoggle-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Commit Format
+
+## Action
+
+Write a concise, freeform commit message without a required prefix
+
+## Evidence
+
+- Pattern in commits.prefixes (empty)
+- Example: 'Add Forge 1.20.2 and NeoForge 1.20.2 ports'
+
+---
+id: resourcetoggle-instinct-commit-length
+trigger: "When writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Commit Length
+
+## Action
+
+Keep the commit message brief, around 40 characters
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: resourcetoggle-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: resourcetoggle-instinct-folder-organization
+trigger: "When adding code for a new platform (e.g., Forge, NeoForge)"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: AlGhozaliRamadhan/ResourceToggle
+---
+
+# Resourcetoggle Instinct Folder Organization
+
+## Action
+
+Create or use a top-level folder named after the platform
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders
+
